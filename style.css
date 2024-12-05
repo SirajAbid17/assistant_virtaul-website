@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+*{
+    margin: 0; 
+    padding:0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+   
+}
+#logo{
+    width: 50vh;
+   margin-top: -15px;
+}
+#h1{
+   flex-wrap: wrap;
+    /* margin-top: -29px; */
+    /* font-size: 20px; */
+    margin-top: -5px;
+    color: white;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+flex-wrap: wrap;
+/* border-bottom: 5px solid yellow; */
+}
+#Name{
+    color: rgb(207, 19, 82);
+}
+#va{
+    color: rgb(228, 26, 228);
+}
+#voice{
+    margin-top: -40px;
+    width: 150px;
+   display: none; 
+}
+#btn{
+    width: 200px;
+    background: linear-gradient(to right,rgb(236, 5, 5),rgb(52, 25, 207));
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 20px;
+   border: none;
+   color:  white;
+font-size: 17px;
+font-weight: 600;
+transition: all 0.5s;
+cursor: pointer;
+}
+#btn:hover{
+    letter-spacing: 2px;
+}
+.bn{
+    color: rgb(168, 243, 6);
+}
+.gh{
+  margin-left: 3px;
+  margin-right: 2px;
+    width:205px;
+    padding: 3px;
+    position: relative;
+ background: repeating-conic-gradient(from var(--a), red,green , blue ,yellow);
+ animation:saju 4s  infinite;
+ border-radius: 8px;
+ border-radius: 20px;
+
+}
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+  }
+  
+@keyframes saju {
+    0%{
+      --a:0deg;
+      transition: all 5s ;
+    }
+    10%{
+      --a:90deg;
+      transition: all 5s ;
+    }
+    20%{
+      --a:145deg;
+      transition: all 5s;
+    }
+    30%{
+        --a:190deg;
+        transition: all 5s;
+      }
+
+      40%{
+        --a:210deg;
+        transition: all 5s;
+      }
+      50%{
+        --a:240deg;
+        transition: all 5s;
+      }
+      60%{
+        --a:300deg;
+        transition: all 5s;
+      }
+      70%{
+        --a:360deg;
+        transition: all 5s;
+      }
+      80%{
+        --a:0deg;
+        transition: all 5s;
+      }
+  }
+
+
+  @media (max-width:500px) {
+    #logo{
+      width: 200px;
+    }
+  }
+  
+  @media (max-width:270px) {
+    #h1{
+     font-size: 19px;
+    }
+  }
+  
+  @media (max-width:270px) {
+    #logo{
+      margin-top: 50px;
+    }
+    #btn{
+     font-size: 14px;
+    }
+  }
+  @media (max-width:320px) {
+#logo{
+  margin-top: 30px;
+}
+.nto h1{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+  margin-left: -6px;
+}
+.nto img{
+  margin-top: 3px;
+}
+  }
+
+  .nto{
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: flex;
+  }
+  .nto img{
+    background-color: black;
+    height: 60px;
+  }
+  .nto h1{
+    margin-top: 13px;
+    font-family: "Edu AU VIC WA NT Arrows", cursive;
+    font-weight: 400;
+    font-style: normal;
+   color: yellowgreen;
+  }
+
+  @media (max-width:520px) {
+  
+  
+    .nto h1{
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: -20px;
+      margin-left: -6px;
+    }
+  
+  }
